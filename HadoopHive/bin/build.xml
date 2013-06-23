@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="hive0.11.0" default="jar" basedir=".">
+	<property name="src" location="../src" />
+	<property name="classes" location="../classes" />
+
+	<target name="jar">
+		<jar jarfile="/home/nahki/workspace/jar/sample.jar">
+			<fileset dir="${classes}" includes="**/*.class" />
+			<fileset dir="${src}" includes="**/*.java" />
+		</jar>
+	</target>
+</project>
